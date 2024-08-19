@@ -1,0 +1,39 @@
+baseURL: "https://whiteoath.net/"
+languageCode: en-us
+title: "whiteoath"
+theme: "hugo-dead-simple"
+menu:
+  main:
+    - name: "<u>H</u>ome"
+      url: /
+      weight: 1
+    - name: "<u>A</u>rticles"
+      url: /articles
+      weight: 2
+    - name: "<u>W</u>iki"
+      url: /wiki
+      weight: 3
+    - name: "<u>T</u>ags"
+      url: "/tags"
+      weight: 4
+
+params:
+  description: "White Oath Exocore"
+
+markup:
+  highlight:
+    codeFences: true
+    style: bw
+    lineNumbersInTable: false
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputs:
+  home:
+    - html
+    - rss
+    - json
+  page:
+    - html
