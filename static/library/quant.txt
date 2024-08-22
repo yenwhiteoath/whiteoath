@@ -1,0 +1,131 @@
+A dsacco on Nov 14, 2017 | parent [-] I on: Ask HN: What are best tools for web scraping?
+I've done this professionally in an infrastructure processing several terabytes per day. A robust, scalable scraping system comprises several distinct parts:
+1. A crawler, for retrieving resources over HTTP, HTTPS and sometimes other protocols a bit higher or lower on the network stack. This handles data ingestion. It will need to be sophisticated these days
+- sometimes you'll need to emulate a browser environment, sometimes you'll need to perform a JavaScript proof of work, and sometimes you can just do regular curl commands the old fashioned way.
+2. A parser, for correctly extracting specific data from JSON, PDF, HTML, IS, XML (and other) formatted resources. This handles data processing. Naturally you'll want to parse ISON wherever you can,
+because parsing HTML and JS is a pain. aut sometimes you'll need to parse images, or outdated protocols like SOAP.
+3. A RDBMS, with databases for both the raw and normalized data, and columns that provide some sort of versioning to the data in a particular point in time. This is quite important, because if you
+collect the raw data and store it, you can re-parse it in perpetuity instead of needing to retrieve it again. This will happen somewhat frequently if you come across new data while scraping that you
+didn't realize you'd need or could use. Furthermore, if you're updating the data on a regular cadence, you'll need to maintain some sort of "retrieved_at", "updated at" awareness in your normalized
+database. MySQL or PostgreSQL are both fine.
+4. A server and event management system, like Redis. This is how you'll allocate scraping jobs across available workers and handle outgoing queuing for resources. You want a centralized terminal for
+viewing and managing a) the number of outstanding jobs and their resource allocations, b} the ongoing progress of each queue, c} problems or blockers for each queue.
+5. A scheduling system, assuming your data is updated in batches. Cron is fine.
+6. Reverse engineering tools, so you can find mobile APIs and scrape from them instead of using web targets. This is important because mobile API endpoints a) change far less frequently than web
+endpoints, and b} are far more likely to be JSON formatted, instead of HTML or IS, because the user interface code is offloaded to the mobile client (iOS or Android appl. The mobile APIs will be private,
+so you'll typically have to reverse engineer the HMAC request signing algorithm, but that is virtually always trivial, with the exception of companies that really put effort into obfuscating the code.
+apktool, jadx and dex2jar are typically sufficient for this if you're working with an Android device.
+7. A proxy infrastructure, this way you're not constantly pinging a website from the same IP address. Even if you're being fairly innocuous with your scraping, you probably want this, because many
+websites have been bumed by excessive spam and will conscientiously and automatically ban any IP address that issues something nominally more than a regular user, regardless of volume. Your
+proxies come in several flavors: datacenter, residential and private. Datacenter proxies are the first to be banned, but they're cheapest. These are proxies resold from datacenter IP ranges. Residential
+IP addresses are IP addresses that are not associated with spam activity and which come from ISP IP ranges, like Verison Fios. Private IP addresses are IP addresses that have not been used for spam
+activity before and which are reserved for use by only your account. Naturally this is in order from lower to greater expense; it's also in order from most likely to least likely to be banned by a scraping
+target. NinjaProxies, StormProxies, Microleaf, etc are all good options. Avoid Luminati, which offers residential IP addresses contributed by users who don't realize their IP addresses are being leased
+through the use of Hola VPN.
+Each website you intend to scrape is given a queue. Each queue is assigned a specific allotment of workers for processing scraping jobs in that queue. You'll write a bunch of crawling, parsing and
+database querying code in an "engine" class to manage the bulk of the work. Each scraping target will then have its own file which inherits functionality from the core class, with the specific crawling
+and parsing requirements in that file. For example, implementations of the POST requests, user agent requirements, which type of parsing code needs to be called, which database to write to and read
+from, which proxies should be used, asynchronous and concurrency settings, etc should all be in here.
+Once triggered in a job, the individual scraping functions will call to the core functionality, which will build the requests and hand them off to one of a few possible functions. If your code is scraping a
+target that has sophisticated requirements, like a JavaScript proof of work system or browser emulation, it will be handed off to functionality that implements those requirements. Most of the time, this
+won't be needed and you can just make your requests look as human as possible - then it will be handed off to what is basically a curl script.
+Each request to the endpoint is a job, and the queue will manage them as such: the request is first sent to the appropriate proxy vendor via the proxy's API, then the response is sent back through the
+proxy. The raw response data is stored in the raw database, then normalized data is processed out of the raw data and inserted into the normalized database, with corresponding timestamps. Then a
+new job is sent to a free worker. Updates to the normalized data will be handled by something like crone where each queue is triggered at a specific time on a specific cadence.
+You'll want to optimize your workflow to use endpoints which change infrequently and which use lighter resources. If you are sending millions of requests, loading the same boilerplate HTML or JS data
+is a waste. ISON resources are preferable, which is why you should invest some amount of time before choosing your endpoint into seeing if you can identify a usable mobile endpoint. For the most
+part, your custom code is going to be in middleware and the parsing particularities of each target; BeautifulSoup, QueryPath, Headless Chrome and JSDOM will take you 80% of the way in terms of pure
+functionality.
+
+
+A dsacco on Mar 22. 2018 | parent [-1 1 on: Hedge-fund managers that do the most research will...
+Renaissance Technologies has completely automated the process of signal discovery.[l] They don't hire researchers to manually derive novel insights or trading models from data, and they don't really
+bother with exclusive sources of data. Instead, they hire researchers to improve methods for automatically processing vast amounts of arbitrary data and extracting profitable trading signals from it.
+When most funds say they're "quantitative", what they really mean is that they use huge amounts of data to inform fundamentally manual trading strategies (this includes most of the places widely
+considered to be "top" firms). They develop trading algorithms, and those trading algorithms are often successful. aut the algorithms are developed manually and then deployed. Their researchers and
+engineers actively seek out new sources of data and try to compete on novel sources of untapped information. aut the reality of what happens is that they simply drown in the data. They can't clean it
+or process it nearly fast enough to maintain long term trading strategies, nor can they even begin to find a way to automate the trading strategy extraction. If you're working with hundreds of terabytes
+of data, you cannot selectively formulate hypotheses and test them. It's far too slow: You will find dramatically fewer novel insights than a fully automated process.
+n other words, they're a step above traditional "fundamental" hedge funds, but they fdcus on the wrong problem (but not for lack of trying In contrast, the truly successful quant funds have
+automated the data processing and feature extraction pipeline end to end. The data is a pure abstraction to them. They don't bother with forming hypotheses and trying to find data to test them, they
+allow their algorithms to actively discover new correlations from the ground up. So many quantitative funds advertise how much data they work with, and how they have all these exotic sources of data
+at their disposal...but the data does not matter. The models for the data do not matter. The mathematics of efficiently processing that data are what matters.
+As a result of their consistent profitability, most of the jobs you see listed for the really successful funds (if they have a website) are not "real" in the strictest sense of the word. You can apply to them,
+but they only keep active careers pages to attract the best researchers. Their only incentive to hire is to 1) keep someone who is actually exceptional from joining a competitor or 2) keep an academic
+researcher from re-discovering their work when they seems like they're getting close to it. This is why they primarily focus on quantitative PhDs in information theory, high energy physics and
+computational mathematics (especially information geometry}.
+To be completely frank, Renaissance is an outlier, but not just because of their retums. They're an outlier because of how public they are. Most of the funds with comparable returns not only don't take
+any outside investor capital, they only have 25 - 50 employees. They virtually never hire because they don't have to. If your work is fundamentally interesting, novel and applicable to what they're
+doing (even if you can't immediately see why), they will call you.
+1. Other more secretive (but equally successful) funds have done this, but they are much more under the radar.
+A valdiorn on Mar 22. 2018
+As someone who has worked for one such secretive hedge fund in the past, and has for a long time been very interested in Renaissance, I'd be curious to know what your source of this information is.
+Any chance you could share some more insight?
+dsacco on Mar 22. 2018
+Sure.
+1. I'm friends with multiple people who used to work at Renaissance, and I've directly spoken with folks who are currently there (among other, similar firms).
+2. I've read the research published by professors and post-docs before they were hired.
+3. I have first hand experience developing forecasts for various market research firms and many hedge funds. I've seen first hand what the difference is between the firms that say they're quantitative
+and the ones that are quantitative.
+Not to discourage you (and you probably already know this) but: since you've already worked in the industry, Renaissance is very unlikely to take you seriously as a candidate. I'm not sure if that's what
+you meant when you said you're interested, but I figured I'd put it out there.
+In any case, contrary to popular belief it's possible to connect the dots on what firms like RenTec do. But just having a high level idea of how they work isn't nearly enough to replicate their success.
+Their success relies on a large number of interdisciplinary scientists cooperating with the support of an incredibly specialized infrastructure. Getting the cliff notes on how they achieve e.g.
+dimensionality reduction doesn't come close to cutting it.
+
+
+A dsacco on Feb 11, 2018 | parent [-] I on: Insider trading has been rife on Wall Street, acad.-,
+f you are a programmer with a good understanding of statistics, you can get access to legal data not reflected in market prices and profit on smaller capacities than hedge funds. In fact, you can
+achieve a Sharpe ratio comparable with the best modern trading strategies (albeit without specialized knowledge, infrastructure and a full team you won't be doing it on billions in A1-JM).
+gave a basic guide for doing this with equity prices just yesterday in a comment here:
+https.•//news.ycombinator.com/item?id=16349011
+The short version is that you need to find actionable data that reliably maps to the revenue of companies without many revenue streams, collect the data (basic programming skills}, build a timeseries
+and forecasting model from that data (statistics and basic financial knowledge}, then take a contrarian position when expected earnings are very far off from what your data predicts. This outline is
+structurally similar for non-equity securities.
+Obvious caveat: I still basically recommend people invest in diversified index funds. But speaking as someone who has done what I just outlined, I see no reason not to give a clear-eyed explanation if
+you're already set on active trading.
+
+A dsacco on Feb 10. 2018 | parent I favorite I on: A Tiny Hedge Fund Made 8.600% on a Vix Bet
+> \ have funds to invest but every time look into getting into I cannot bring myself to do it because I cannot stop my brain thinking it's gambling. Without insider knowledge I don't understand how I
+could beat the market short term.
+f you have programming skill and a good understanding of statistics, do the following:
+1. Identify a subset of equities in the total market which a) have fairly one dimensional revenue streams, b) have a market capitalization of at least —$1-2B, and c) are not prone to extraordinary hype
+or tech-centric accounting, such that e.g. a "win" or a "loss" in an earnings announcement is fairly straightforward to understand land therefore you can more easily, if not perfectly predict how the
+market will react).
+2. Identify a strong, legal source of alternative data that maps directly to the revenue stream of one of these companies. The more difficult to find and collect, the better. use your programming skills to
+automate the collection and curation of this dataset.
+3. Incubate your dataset for a period of several months, then build it into a timeseries. using the timeseries, build a model that forecasts the expected revenue of each particular company using
+historical 10-K and 10-Q documents.
+4. For the companies whose data imply a jump in either direction that is very unexpected (according to e.g. the aggregate analyst consensus}, take a contrarian position in the equity. If you're feeling
+very confident and have a higher risk tolerance, study options and take the corresponding derivative position.
+5. In particular, establish a target win rate overall, a target tolerable drawdown period overall, and a target exit price (sufficient win or bearable loss) for each position, then follow it
+f you do this correctly and consistently, you will profit significantly and consistently enough that your system will be fully distinguishable from uninformed gambling. To equip you with a bit of meta-
+analysis here, this outline works because a) all trading strategies profit from finding opportunities to exploit pricing inefficiencies in various securities (or groups thereon, and b} the only way to
+deliberately identify those opportunities is by having information, access, or techniques that the broader market does not have yet (or else the price would reflect that information}.
+The great difficulty in this process is finding and analyzing the alternative data in the first place. As a fallback, if you're not confident you can build a trading strategy with this data you can also sell it to
+hedge funds, who will be very happy to buy it if it actually maps to revenue and is otherwise unknown.
+
+dsacco on Feb 2. 2018 [-1
+> For Tesla auto sales couldn't you just look at tesla vih numbers?
+You've definitely intuited some of the method, yes O. The rest of it entails:
+1) how to get all VINS both authoritatively and legally,
+2) how to distinguish between valid VINS and assigned VINs,
+3) how to reverse the actual revenue projection from the set of all assigned VINs.
+The first requirement is the hardest Tracking self-reported VIN delivery from users isn't rigorous enough. You could use an endpoint and scrape from it, but how would you do it legally and reliably?
+The second requirement is also difficult. Assuming you've found an authoritative source fdr valid VINs, how do you distinguish which VINs are assigned?
+Once you have those two, the third requirement is mostly straightforward. You can implement your own VIN decoder using public NHTSA documentation, map each VIN field to options and prices across
+models, and track sequential VINs using the distinguishing method of requirement 2 on the data you're getting from requirement 1.
+Naturally, there are other ways to do this that don't involve VINs at all.
+
+A defen on Feb 10. 2018
+To give a concrete example of what you're describing (one that no longer works) - this is from memory from an earlier discussion here on HN - years ago someone discovered that FedEx tracking
+numbers for Apple products were essentially serial in nature. In other words, if you ordered an iPhone and got tracking number X, and then a week later you ordered another one and got tracking
+number X + 500,000, it meant that Apple had sold 500,000 products online in that time period. Turns out that number was highly correlated with Apple earnings. The person in question claimed to have
+sold highly accurate "Apple earnings predictions" to hedge funds for 1001<-200K per quarter per hedge fund.
+
+This is not to say the system doesn't work - it very clearly works. But it's also easy to hit relatively low capacity constraints, and it's imperfect for the reasons I've outlined. You might think exclusive data gives you an edge, but for the most part it does not (except for relatively short horizons). It's actually extremely difficult to have data which no other market participant has, and information diffusion happens very quickly. Ironically, in one of the very few times my colleagues and I had truly exclusive data (Tesla), the market did not react in a way that could be predicted by our analysis.
+The most successful quantitative hedge funds focus on the math, because most data has a relatively short half-life for secrecy. They don't rely on the exclusivity of the data, they rely on superior methods for efficiently classifying and processing truly staggering amounts of it. They hire people who are extraordinarily talented at the fundamentals of mathematics and computer science because they mostly don't need or want people to come up with unique hypotheses for new trading strategies. They look to hire people who can scale up their research infrastructure even more, so that hypothesis testing and generation is automated almost entirely.
+This is why I've said before that the easiest way to be hired by RenTech, DE Shaw, etc. is to be on the verge of re-discovering and publishing one of their trade secrets. People like Simons never really cared about how unique or informative any particular dataset is. They cared about how many diverse sets of data they could get and how efficiently they could find useful correlations between them. The more seemingly disconnected and inexplicable, the better.
+I haven't yet, though if you're interested: https://ieor.columbia.edu/files/seasdepts/file_attach/BoysGuide.pdf and then you need a data pipeline, most are using Bloomberg Terminal which is like $20k per year, and a few dozen more proprietary data feeds, some of these are only $30/mth subscription price and you can just write your own pipeline to analyze it if you wanted, and were only trading on a personal level. Bloomberg gives you vast information like 'which oil tanker is under repair this week?' so you can predict energy prices and tons of other information, it even has it's own internal craigslist called 'posh' which is all very expensive rolex's and shit, and 'yelp' clone to review extremely expensive restaurants and business class airline lounges. There's also Bloomberg chat, where you can just dump stock privately with some billionaire who's online like Carl Icahn. However the price is way too much, so you would have to find the next best thing which is raw data, and then process it yourself, build a model (read that pdf), identify inefficiencies in the market (arbitrage) and then try and make money from that. To do so you would need a subscription to Nanex NxCore 'N-Core', CBOE Livevol, or QuantQuote. There's also Tickdata but i've never used them.
+In general, statistical arbitrage (identifying inefficiencies in pricing) isn't machine learning bound, and it is not a data mining endeavor. Understanding the market you are trying to capitalize on, finding new data feeds that provide valuable information, carefully building out a model to test your hypothesis, deriving a sound trading strategy from that model is how it works. There's so many of these data pipelines it's impossible to keep track of them, because anybody and everybody who works in analytics ends up making their own proprietary feed, which is why the fintech industry is always hiring. You get good at parsing some massive feed then about 300k people will pay you for that information on a monthly basis
+If you're really interested in this, all you need to know to work at Rentec (Rennaisance Technologies), who is probably the most successfull outfit in the world, is C/C++ and a basic knowledge of statistics. Then of course you will be exposed to their proprietary data feed farm, which is currently the best on earth, and if the SEC allows it you can dabble on the side but I don't know anything about US law, seems everything is illegal while in HK, nobody cares. 

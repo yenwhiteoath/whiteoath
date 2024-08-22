@@ -1,9 +1,8 @@
 ---
 title: 'Anime list'
-subtitle: ""
 date: 2022-10-08
-toc: true
 tags: ['aesthetics']
+toc: true
 draft: false
 ---
 
@@ -36,4 +35,4 @@ draft: false
 - FLCL
 - Tsigurui
 
-![asdfas](/images/bakemonogatari.png)
+![](/images/bakemonogatari.png)
