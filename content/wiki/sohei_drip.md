@@ -8,14 +8,16 @@ draft: false
 # Sohei drip
 
 [Baraka](https://www.youtube.com/watch?v=CGLMerMdWkE)
-![[sohei_6.jpg]]
-![[sohei_7.jpg]]
-![[sohei_8.jpg]]
-![[Sohei.jpg]]
-![[sohei_1.jpg]]
-![[sohei_2.jpg]]
-![[sohei_4.jpg]]
-![[sohei_5.jpg]]
-![[sohei_9.jpg]]
-![[sohei_3.jpg]]
+
+
+![](/images/sohei_6.jpg)
+![](/images/sohei_7.jpg)
+![](/images/sohei_8.jpg)
+![](/images/Sohei.jpg)
+![](/images/sohei_1.jpg)
+![](/images/sohei_2.jpg)
+![](/images/sohei_4.jpg)
+![](/images/sohei_5.jpg)
+![](/images/sohei_9.jpg)
+![](/images/sohei_3.jpg)
 

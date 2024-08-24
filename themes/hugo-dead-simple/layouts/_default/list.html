@@ -1,19 +1,19 @@
 {{ partial "header.html" . }}
 
-<div class="home-content">{{ .Content }}</div>
 
 {{ if .IsHome }}
-    <!--TODO: replace with faster search-->
-    {{ partial "search-form.html" . }}
-    <ul id="results"></ul>
-
+<!--TODO: replace with faster search-->
+{{ partial "search-form.html" . }}
+<ul id="results"></ul>
+<div class="home-content">{{ .Content }}</div>
+<!--<img src="/imgs/card.png" width="400px">
     {{ range .Sections }}
-        <h2 class="section-title">{{ .CurrentSection.Title }}</h2>
+        <h1 class="section-title">{{ .CurrentSection.Title }}</h1>
         {{ .CurrentSection.Content }}
         {{ partial "post_list.html" . }}
-    {{ end }}
+    {{ end }}-->
 {{ else }}
-    <h2 class="section-title">{{ .CurrentSection.Title }}</h2>
+    <h1 class="section-title">{{ .CurrentSection.Title }}</h1>
     {{ partial "post_list.html" . }}
 {{ end }}
 
