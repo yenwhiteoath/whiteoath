@@ -1,0 +1,14 @@
+---
+title: Videogames as Nootropics
+date: 2023-03-09
+tags: ['videogames', 'biology']
+draft: false
+---
+
+Sports are extremely important for children to develop not just their bodies but more importantly their brains. I'd say that if one had to choose for their child between spending years in sports teams VS traditional schooling (exclusive), the former would likely be more conductive towards sculpting a complete person, except for basic literacy of course. There is a midwit tendency to overestimate the importance of reading text and taking exams, especially the uninteresting ones at schools. There is no argument about this kind of activity being beneficial to the brain. Sports on the other hand, and playing in general, demand fast-paced critical thinking, foster proper socialization and learning how to act with teamwork, among others. Play is noble and children recognize that.
+
+More importantly, videogames can have the same brain-promoting effects as sports, accelerated with vastly increased variance due to how many different kinds there are (as opposed to sport games which are less numerous and involve more or less the same behaviors). Modern life is very limiting when it comes to behaviors that demand mind activity because there is no competition or survival pressure anywhere, so the parts of the brain that deal with these problems remain inactive. Videogames are full of them. Strategy games put the player in situations that demand efficient resource allocation, decision-making, territorial control; Shooter games demand rapid responses and target detection. I suspect mainstream ressentiment over exists because of the competitiveness and skillful action it cultivates. Success in competition requires contact with the objective material truth of the game state, as opposed to hypersocialized top-down teaching of what truth is.
+
+And it's underrated how intellectual these activities actually are. Let's remember that the slowest computers can solve any mathematical equation in school textbooks within milliseconds, but they can't perform object detection or any other of the skills used in not just complex strategy games but even simple FPS games. Object detection specifically requires neural networks with millions of parameters and it still is not on par with humans. But solving equations is thought to be a complex task, while shooting enemies on a game is not. This view is mistaken and doesn't take into account the biological hardware being used under the hood.
+
+We already have studies showing the videogames increase IQ: [Video games can help boost children’s intelligence](https://news.ki.se/video-games-can-help-boost-childrens-intelligence). But IQ covers only a small subset of what videogames cultivate in children.

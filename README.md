@@ -3,6 +3,7 @@
 ## TODO
 - [ ] Liumin remake
 - [ ] Sola scriptura
+- [ ] Add scrapbook
 - [ ] Concentrate all Ray peat/metabolism resources 
 - [ ] Concentrate all Icycalm resources
 - [ ] Sepia theme
