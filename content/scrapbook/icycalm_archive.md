@@ -1,6 +1,6 @@
 ---
 title: Icycalm - Collected essays on videogames
-date: 2022-11-6
+date: 2022-11-06
 tags: ['videogames']
 draft: false
 toc: true

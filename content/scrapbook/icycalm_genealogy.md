@@ -1,7 +1,7 @@
 ---
 title: Icycalm On the Genealogy of 'Art Games' - A Polemic
-date: 2022-11-6
-tags: vidya
+date: 2022-11-06
+tags: ['videogames']
 draft: false
 toc: true
 ---
