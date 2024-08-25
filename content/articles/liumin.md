@@ -1,7 +1,7 @@
 ---
 title: Liumin
 date: 2023-04-19
-tags: ['hyperdata']
+tags: ['aesthetics', 'hyperdata']
 draft: false
 ---
 
@@ -46,9 +46,10 @@ Some comments on youtube:
 
 [Deepchord presents Echospace Liumin](https://www.youtube.com/watch?v=qGPZpr5H9Sk)
 
-Many people seem to be arriving at the same conclusion that the abstracted urban view contains something sublime. Icycalm seems to think similarly, but associates the view simplistically with all the infinite opportunities and potentialities available in the city.
+Many people seem to be arriving at the same conclusion that the abstracted urban view contains something sublime. [Icycalm seems to think similarly](https://web.archive.org/web/20111016003909/http://insomnia.ac/japan/imagining_tokyo.php), but associates the view simplistically with all the infinite opportunities and potentialities available in the city.
 
-https://web.archive.org/web/20111016003909/http://insomnia.ac/japan/imagining_tokyo.php
+> And what do these people see in the above images (or, indeed, the many more like them that are currently sitting in my hard drive)? I'll tell you because there was once a time, not so long ago, when I used to stare at similar pictures for hours—whether sitting in front of a computer monitor, in my mind while walking the streets, or in my sleep (back when I actually used to sleep).
+They see excitement, action and adventure. They see a city that, as the cliché goes, never sleeps. They see a sci-fi landscape right out of Ridley Scott's Blade Runner or William Gibson's Neuromancer.
 
 ![](/images/echospace_liumin.jpg)
 

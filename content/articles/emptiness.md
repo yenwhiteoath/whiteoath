@@ -1,7 +1,7 @@
 ---
 title: Emptiness view
 date: 2022-12-11
-tags: ['buddhism']
+tags: ['dharma', 'philosophy']
 draft: false
 ---
 

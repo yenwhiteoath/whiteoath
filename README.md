@@ -1,9 +1,9 @@
 # White Oath Exocore
 
 ## TODO
-- [ ] Liumin remake
+- [X] Liumin remake
 - [ ] Sola scriptura
-- [ ] Add scrapbook
+- [X] Add scrapbook
 - [ ] Concentrate all Ray peat/metabolism resources 
 - [ ] Concentrate all Icycalm resources
 - [ ] Sepia theme
