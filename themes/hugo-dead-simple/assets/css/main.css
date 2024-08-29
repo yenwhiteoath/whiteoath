@@ -54,7 +54,7 @@
 
 /* HTML & BODY */
 html {
-  /* background-color: #fff2d1; */
+  background-color: #fff2d1;
   color: var(--text);
   /* set in header*/
   /* background-color: var(--background); */
@@ -62,7 +62,7 @@ html {
 }
 
 body {
-  /* background-color: #fff2d1; */
+  background-color: #fff2d1;
   margin: auto;
   padding: 0em 1em 2em 1em;
   font-family:

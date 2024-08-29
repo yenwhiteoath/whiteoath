@@ -9,7 +9,7 @@
 
 .highlight div,
 pre {
-  background-color: var(--code-background);
+  background-color: #f2e4c2;
   padding: 0.7em;
   overflow-x: auto;
   margin: 0px;
@@ -37,7 +37,7 @@ code {
   /* font-stretch: expanded; */
   font-stretch: normal;
 
-  background: var(--code-background);
+  background: #f2e4c2;
   border-radius: 5%;
   padding: 1px 4px;
   border: 1px solid var(--code-border);

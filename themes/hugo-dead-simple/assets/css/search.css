@@ -17,7 +17,7 @@
 }
 
 input {
-  background-color: var(--background);
+  background-color: #fff2d1;
   color: var(--text);
   border-color: var(--border-general);
   border-radius: 4px;
