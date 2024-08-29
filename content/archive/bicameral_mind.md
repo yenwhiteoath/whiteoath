@@ -24,11 +24,11 @@ Jaynes suggests that the unprecedented stresses of the 2nd millennium B.C. force
 
 To establish the gods' disappearance, Jaynes cites a number of illustrations and cuneiform tablets dating from Sumerian times. He shows a stone-carven image of the King of Assyria kneeling in supplication before an empty throne, from which his god is conspicuously absent. The accompanying cuneiform script reads, "One who has no god, as he walks along the street,/ Headache envelopes him like a garment." Another tablet reads,
 
-    My god has forsaken me and disappeared,
-
-    My goddess has failed me and keeps at a distance.
-
-    The good angel who walked beside me has departed. 
+> My god has forsaken me and disappeared,
+> 
+> My goddess has failed me and keeps at a distance.
+>
+>The good angel who walked beside me has departed. 
 
 Jaynes interprets this as evidence of a new subjectivity in Mesopotamia. The bicameral mind has begun to collapse into the modern unicameral mind of the self-willed, self-aware "I", and as a consequence the gods no longer speak to people, as they did in the days of old (223).
 

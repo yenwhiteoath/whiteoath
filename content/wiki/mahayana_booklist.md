@@ -1,7 +1,7 @@
 ---
 title: Mahayana reading list
 date: 2022-10-23
-tags: ['buddhism']
+tags: ['dharma']
 toc: true
 draft: false
 ---

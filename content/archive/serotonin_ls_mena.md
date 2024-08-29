@@ -1,5 +1,5 @@
 ---
-title: Serotonin - tweets by Landshark and Menatetronone_4
+title: Serotonin - tweets by Landshark and Menatetronone
 date: 2022-10-09
 tags: ['biology', 'health']
 draft: false

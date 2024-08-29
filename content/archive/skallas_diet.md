@@ -1,5 +1,5 @@
 ---
-title: Paul Skalla on diet
+title: Paul Skallas on diet
 date: 2022-10-09
 tags: ['health']
 draft: false

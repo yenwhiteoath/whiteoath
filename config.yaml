@@ -7,15 +7,21 @@ menu:
     - name: "<u>H</u>ome"
       url: /
       weight: 1
-    - name: "<u>A</u>rticles"
-      url: /articles
+    - name: "Posts"
+      url: /posts
       weight: 2
-    - name: "<u>W</u>iki"
+    - name: "Wiki"
       url: /wiki
+      weight: 3
+    - name: "Archive"
+      url: /archive
       weight: 3
     - name: "<u>T</u>ags"
       url: "/tags"
       weight: 4
+    - name: "About"
+      url: "/about"
+      weight: 5
 
 params:
   description: "White Oath Exocore"

@@ -1,7 +1,7 @@
 ---
 title: Siddharta's Dharma
 date: 2022-10-07
-tags: ['buddhism']
+tags: ['dharma']
 toc: true
 draft: false
 ---
