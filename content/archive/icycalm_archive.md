@@ -6,10 +6,10 @@ draft: false
 toc: true
 ---
 
-TODO
+Archived commentary: https://web.archive.org/web/20111009211242/http://insomnia.ac/commentary/
 
 ## On Set Theory and the Bastardization Process
-[By Alex Kierkegaard / January 24, 2014](https://culture.vg/features/art-theory/on-set-theory-and-the-bastardization-process.html)
+By Alex Kierkegaard / January 24, 2014
 
 Let's kick off the second circle of videogame culture essays with a bang: with stuff that will blow your fucking mind and with theories which no one else besides a bona fide genius could devise.
    Now, the issue of the connection between art and videogames should already be a dead horse for everyone who's read my Genealogy: videogames are not merely an artform, but the highest artform possible, and therefore also the last — and this can be seen, as I explained in detail in that work, by considering the evolution of art from the perspective of immersion and the technological sophistication of the tools invented and employed throughout the ages in order to increase it. Thus in the Genealogy I approached the issue from the angle of the history of art. There is another angle from which we could approach the same issue, however, and gain a slew of amazing new insights in doing so: the angle of mathematics, and more specifically that of set theory, and in particular the distinction between supersets and subsets.
@@ -42,7 +42,7 @@ A proper subset S' of a set S, denoted S' c S, is a subset that is strictly cont
 
 ## Aesthetics and Mechanics and the Grand Unified Theory
 
-[By Alex Kierkegaard / May 30, 2017](https://culture.vg/features/art-theory/aesthetics-and-mechanics-and-the-grand-unified-theory.html)
+By Alex Kierkegaard / May 30, 2017
 
 Let's finally take care of this debacle that's been giving everyone so much trouble for over a decade now, but its solution is a subtle, delicate one, on top of being extremely long, so do me a favor and pay close attention and, hopefully, you'll get it.
    My 2007 essay Arcade Culture was the first that brought the concepts of difficulty and mechanics to the fore of videogame theory and criticism, and subsequent essays such as On Complexity, Depth and Skill cemented the dominance of these concepts in the minds of the hardcore, at precisely the same time that journalists and pseudo-academics were going in the exact opposite direction with their cheerleading support of the Wii, casual games with no complexity and modes that play the game and finish it while the player sits back and watches. Considering the orgy of shitty, stupid articles (and even books, chief among them Jesper Juul's Casual Revolution) that were being furiously scribbled at the time to justify what would be later clearly seen to have been a mere fad, the warmth with which the hardcore spread my essays and adopted all my concepts, as summarized a while ago by a reader in an STG forum [ > ], shouldn't have been surprising.
@@ -81,7 +81,7 @@ Let's finally take care of this debacle that's been giving everyone so much trou
 
 ## On Why Bigger Has Always Been Better, And Why It Always Will Be
 
-[By Alex Kierkegaard / December 6, 2014](https://culture.vg/features/art-theory/why-bigger-is-better.html)
+By Alex Kierkegaard / December 6, 2014
 
 Games are getting too big, we are told. Dev team sizes and budgets are "skyrocketing", and this is hurting creativity, by diluting the creative process and making publishers risk averse, so that the amazing games churned out every year by all the big publishers do not really exist and we are merely hallucinating them. The solution to this problem is clear: return to the primitive mechanics and programmer graphics of the 2D games of the '70s, which is more or less the equivalent in the film industry of dropping Marvel's astonishing masterpieces and going back to cave paintings. And I am not even exaggerating: if you have understood my essay on Set Theory, you should be able to see that moving from Far Cry 2 to Hotline Miami is about equivalent to moving from Spider-Man 2 to cave paintings, and just as disastrous for the artforms concerned. Thankfully, it is also impossible, because the general public (the much-maligned "Mane Streem") is too healthy to allow it, so it's simply not gonna happen.
    But the wretches who propound this resentful, decadent ideology are still hurting the artform with their repugnant lies, so it's time someone stepped up and put them in their place, figuratively speaking (because their actual place is in concentration camps and gas chambers).
@@ -139,7 +139,7 @@ Zarathustra: "They punish you for all your virtues. Fundamentally they forgive y
 
 ## The Motion-sensing Dead-end
 
-[By Alex Kierkegaard / January 7, 2017](https://culture.vg/features/art-theory/the-motion-sensing-dead-end.html)
+By Alex Kierkegaard / January 7, 2017
 
 I’ve been meaning to write this essay since the Wii days, believe it or not. Actually, those who’ve been paying attention to the titles of forthcoming Videogame Culture essays on the sidebar of existing ones should be easily able to believe it, because “The Motion-sensing Dead-end” has been sitting there provocatively for years. I didn’t just figure all this stuff out now, is what I am saying: I’ve had it figured since the Wii arrived and flooded the market with shitty motion-sensing games that very few played, none of whom actually enjoyed them. And yet here we are, over a full decade later, and no one’s learned their lesson. If anything, everyone seems to have learned the opposite lesson, because instead of one shitty motion-sensing controller and a handful of games for it we now have so many controllers and so many games being designed for use with them that the situation has gone from a mild illness to pandemic status. It’s time, in other words, for icycalm to step in and bring some sense to the debate.
 
@@ -183,4 +183,3 @@ What you need to do then, to start grasping what the hell’s going on here, is 
 
    The future of videogame controls is mind control, my dear readers! Figure out how we can mentally control our avatars, and then we’ll have 1:1 MENTAL control VR play without having to get out of the couch, or even the bed — which is the whole point. Where is the Palmer Luckey who will figure this out, and take the technology out of the laboratories, where it is currently residing, and into the hands of game developers?
    I will be watching Kickstarter.
-
