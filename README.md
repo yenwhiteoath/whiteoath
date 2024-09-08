@@ -2,11 +2,11 @@
 
 ## TODO
 - [X] Liumin remake
-- [ ] Sola scriptura
 - [X] Add scrapbook
+- [X] Sepia theme
 - [ ] Concentrate all Ray peat/metabolism resources 
 - [ ] Concentrate all Icycalm resources
-- [ ] Icycalm fix quotes
-- [ ] Sepia theme
+- [ ] Home+About pages
+- [ ] Sola scriptura remake
+- [ ] Mcintyre tldr
 - [ ] Rework tags
-- [ ] About page

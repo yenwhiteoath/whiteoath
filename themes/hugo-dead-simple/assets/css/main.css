@@ -16,14 +16,14 @@
   --toc-border: #aaa;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --complimentary: black;
     --text: #d8d8d8;
     --code: #cbcbcb;
-    --text-dim: #a7a7a7;
+    --text-dim: #a7a7a7;*/
     /* --link: #8cb4ff; */
-    --link: #88a9e9;
+    /*--link: #88a9e9;
     --link-visited: #a390ca;
     --code-background: #272727;
     --code-border: transparent;
@@ -34,7 +34,7 @@
     --toc-background: #343434;
     --toc-border: #495057;
   }
-}
+}*/
 
 #gitinfo-date {
   color: var(--text-dim);

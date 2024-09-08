@@ -1,7 +1,7 @@
 ---
 title: Paul Skallas on videogames
 date: 2022-10-09
-tags: ['vidoegames']
+tags: ['videogames']
 draft: false
 ---
 
