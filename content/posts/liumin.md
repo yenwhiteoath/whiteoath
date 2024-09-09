@@ -5,7 +5,7 @@ tags: ['aesthetics', 'hyperdata']
 draft: false
 ---
 
-![](/images/austinyhou2.jpg)
+![](/images/austinyhou2.png)
 
 If a demigod wanted to look at humanity, his point of view would be that of urban rooftop or aerial drone photography.
 
@@ -29,7 +29,7 @@ MDMA
 
 I felt that I was legitimized to push forward "Liumin-core" as a distinct aesthetic when I shared the album to friends and it was picked up as a meme immediately, as they independently arrived at similar thoughts thoughts I had about it. A tl;dr of Liumin-core might revolve around the semantic shift of the word "enchantment" from being connected with stereotypical rural fantasy settings to modern urban environments. Otherwise, it is the deredditification of cyberpunk - as it exists now and not as a sci-fi future.
 
-![](/images/austinyhou1.jpg)
+![](/images/austinyhou1.png)
 
 [A musical reviewer seems to have arrived independently at similar intuitions](https://rateyourmusic.com/music-review/cub1/deepchord-presents-echospace/liumin/100289455), but shies away from getting to the root of it:
 > Stephen Hitchell, Echospace, was asked on the obscurity of the album title in an interview on Headphone Commute, saying;
