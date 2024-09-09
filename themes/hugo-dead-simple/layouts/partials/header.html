@@ -26,7 +26,6 @@
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://whiteoath.net">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="whiteoath | {{ .Title }}">
     <meta property="og:description" content="White Oath exocore \ knowledge repository">
     <meta property="og:image" content="/imgs/card_dither.png">
 
@@ -34,10 +33,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="whiteoath.net">
     <meta property="twitter:url" content="https://whiteoath.net">
-    <meta name="twitter:title" content="whiteoath | {{ .Title }}">
+    
     <meta name="twitter:description" content="White Oath exocore \ knowledge repository">
     <meta name="twitter:image" content="/imgs/card_dither.png">
-
 
     {{ with .OutputFormats.Get "rss" -}}
         {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
@@ -45,8 +43,12 @@
 
     {{ if .IsHome }}
         <title>{{ .Site.Title }}</title>
+        <meta name="twitter:title" content="whiteoath">
+        <meta property="og:title" content="whiteoath">
     {{ else }}
         <title>{{ .Title }} | {{ .Site.Title }}</title>
+        <meta name="twitter:title" content="whiteoath | {{ .Title }}">
+        <meta property="og:title" content="whiteoath | {{ .Title }}">
     {{ end }}
 
     <!-- Prevent flicker on page load. -->
