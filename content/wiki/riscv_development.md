@@ -53,4 +53,4 @@ Then:
 riscv64-unknown-elf-gcc test.c
 spike --isa=RV64GC pk a.out
 ```
-This will cross-compile the file using for RISC-V, specifically the `RV64GC` extension (or whatever extension passed in the GCC flags), and simulate it in the `Spike` RISC-V emulator. `pk` is a proxy kernel that intercepts syscalls in what's otherwise bare-metal code.
+This will cross-compile the file for RISC-V, specifically the `RV64GC` extension (or whatever extension is passed in the GCC flags), and simulate its execution in the `Spike` RISC-V emulator. `pk` is a proxy kernel that intercepts syscalls in what's otherwise bare-metal code.
