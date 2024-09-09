@@ -2,7 +2,7 @@
 title: Endocrine disruptors
 subtitle:
 date: 2022-11-20
-tags: ['health']
+tags: ['biochem']
 toc: true
 draft: false
 ---

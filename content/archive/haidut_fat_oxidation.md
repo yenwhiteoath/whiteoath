@@ -1,7 +1,7 @@
 ---
 title: Haidut on β-oxidation
 date: 2022-12-11
-tags: ['biology', 'health']
+tags: ['biochem']
 toc: true
 draft: false
 ---

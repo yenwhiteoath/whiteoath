@@ -1,7 +1,7 @@
 ---
 title: Interface theory of perception
 date: 2023-04-19
-tags: ['hyperdata', 'biology']
+tags: ['hyperdata']
 toc: true
 draft: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: Metabolism
 date: 2022-10-24
-tags: ['health']
+tags: ['biochem']
 toc: true
 draft: false
 ---

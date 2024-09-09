@@ -1,7 +1,7 @@
 ---
 title: Magnesium
 date: 2022-10-10
-tags: ['health']
+tags: ['biochem']
 toc: true
 draft: false
 ---

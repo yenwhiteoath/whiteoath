@@ -1,7 +1,7 @@
 ---
 title: Paul Skallas on diet
 date: 2022-10-09
-tags: ['health']
+tags: ['biochem']
 draft: false
 ---
 

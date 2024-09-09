@@ -1,7 +1,7 @@
 ---
 title: Ray Peat - Introduction
 date: 2022-12-10
-tags: ['biology', 'health']
+tags: ['biochem']
 draft: false
 ---
 

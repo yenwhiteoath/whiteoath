@@ -1,7 +1,7 @@
 ---
 title: Glutamate and mental illness
 date: 2022-10-10
-tags: ['health', 'biology']
+tags: ['biochem']
 toc: true
 draft: false
 ---

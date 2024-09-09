@@ -2,7 +2,7 @@
 title: Pharmacology
 subtitle: Notes from Rang & Dale's book "Pharmacology"
 date: 2022-11-19
-tags: ['biology']
+tags: ['biochem']
 toc: true
 draft: false
 ---

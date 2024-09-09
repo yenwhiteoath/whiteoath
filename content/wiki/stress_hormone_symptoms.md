@@ -1,7 +1,7 @@
 ---
 title: Symptoms of high adrenaline/cortisol
 date: 2022-10-23
-tags: ['health']
+tags: ['biochem']
 toc: true
 draft: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: Liumin
 date: 2023-04-19
-tags: ['aesthetics', 'hyperdata']
+tags: ['aesthetics']
 draft: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Videogames as Nootropics
 date: 2023-03-09
-tags: ['videogames', 'biology']
+tags: ['videogames', 'hyperdata']
 draft: false
 ---
 
