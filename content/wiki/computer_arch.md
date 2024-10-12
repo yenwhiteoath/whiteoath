@@ -18,6 +18,7 @@ draft: false
 - [Safety in Systems Programming](https://web.stanford.edu/class/cs110l/)
 - [Operating System Engineering (MIT 6.S081)](https://pdos.csail.mit.edu/6.S081/2020/schedule.html)
 - [Performance Engineering of Software Systems (MIT 6.172)](https://ocw.mit.edu/courses/6-172-performance-engineering-of-software-systems-fall-2018/resources/lecture-videos/)
+- [From the Transistor](https://www.fromthetransistor.com/)
 
 ## Misc
 - [Prabhakar Ragde - flanerie on C](https://cs.uwaterloo.ca/~plragde/flaneries/IYMLC/)

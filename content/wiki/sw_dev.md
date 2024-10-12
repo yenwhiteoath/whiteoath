@@ -23,6 +23,7 @@ draft: false
 ## Web Design
 - [MIT webdev workshop](https://weblab.mit.edu/schedule/)
 - [Full Stack Open](https://fullstackopen.com/en/#course-contents/)
+- [The Copenhagen Book (implementing auth in web applications)](https://thecopenhagenbook.com/)
 - [Building Deep Learning REST API](https://blog.keras.io/building-a-simple-keras-deep-learning-rest-api.html)
 - [LaTex.css](https://latex.vercel.app/)
 - [Best motherfucking site](https://bestmotherfucking.website/)
