@@ -18,6 +18,7 @@ draft: false
 - [Safety in Systems Programming](https://web.stanford.edu/class/cs110l/)
 - [Operating System Engineering (MIT 6.S081)](https://pdos.csail.mit.edu/6.S081/2020/schedule.html)
 - [Performance Engineering of Software Systems (MIT 6.172)](https://ocw.mit.edu/courses/6-172-performance-engineering-of-software-systems-fall-2018/resources/lecture-videos/)
+- [Algorithms for Modern Hardware](https://en.algorithmica.org/hpc/)
 - [From the Transistor](https://www.fromthetransistor.com/)
 
 ## Misc
@@ -28,4 +29,6 @@ draft: false
 - [Awesome ELF Resources](https://github.com/tmpout/awesome-elf)
 - [ARM or x86? ISA Doesn’t Matter](https://chipsandcheese.com/2021/07/13/arm-or-x86-isa-doesnt-matter/)
 - [The Semiconductor Ecosystem Explained](https://semiwiki.com/semiconductor-manufacturers/307494-the-semiconductor-ecosystem-explained/)
-
+- https://travisdowns.github.io/
+- https://johnnysswlab.com/
+- http://0x80.pl/notesen.html

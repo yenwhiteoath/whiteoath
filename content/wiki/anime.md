@@ -33,6 +33,17 @@ draft: false
 - Kaiji
 - Mushishi
 - FLCL
-- Tsigurui
+- Shigurui
+- Initial D
+- Hajime No Ippo
+- Frieren
+- Kizumonogatari
+- Nekomonogatari
+- Gankutsuou
+- Ghost in the Shell - Stand Alone Complex
+- Ghost in the Shell - Solid State Society
+- Berserk
+- Mushishi Zoku Shou
+- Attack on Titan
 
 ![](/images/bakemonogatari.png)

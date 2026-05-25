@@ -1,7 +1,7 @@
 ---
 title: Isaac Newton
 date: 2024-08-25
-tags: [ 'history']
+tags: ['history']
 toc: false
 draft: false
 ---
