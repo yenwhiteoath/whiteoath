@@ -1,5 +1,5 @@
 ---
-title: Money and the Early Greek Mind: Homer, Philosophy, Tragedy
+title: Money and the Early Greek Mind - Homer, Philosophy, Tragedy
 date: 2025-03-25
 tags: ['philosophy']
 draft: false
