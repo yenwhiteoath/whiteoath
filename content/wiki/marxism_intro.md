@@ -1,11 +1,12 @@
 ---
 title: Marxism reading list
-subtitle:
 date: 2026-06-03
 tags: ['politics', 'philosophy']
 toc: true
 draft: false
 ---
+
+## Marxism reading list
 
 -   [Vladimir Ilyich Lenin - Karl Marx (A Brief Biographical Sketch With an Exposition of Marxism)](https://www.marxists.org/archive/lenin/works/1914/granat/ch02.htm)
 -   [Vladimir Ilyich Lenin - On the Question of Dialectics](https://www.marxists.org/archive/lenin/works/1915/misc/x02.htm)
