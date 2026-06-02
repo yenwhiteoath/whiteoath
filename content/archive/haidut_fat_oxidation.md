@@ -1,5 +1,5 @@
 ---
-title: Haidut on β-oxidation
+title: Glucose vs fat oxidation (posts by haidut)
 date: 2022-12-11
 tags: ['biochem']
 toc: true

@@ -11,3 +11,7 @@ draft: false
 [Bioenergetics I - Introduction](https://impero.substack.com/p/bioenergetics-i-introduction)
 
 [Bioenergetics I - Introduction (appendix)](https://impero.notion.site/Bioenergetics-I-Introduction-appendix-986e7a163f0a4df3a014382bdaf01c78#8069455d51e741deb82c77c8aa109cb5)
+
+[Dinkov Distilled: The Metabolic Theory Of Health](https://dinkov-distilled.vercel.app/)
+
+

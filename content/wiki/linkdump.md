@@ -53,6 +53,7 @@ draft: false
 - <https://chuangcn.org/>
 - <https://andrewbatson.com/>
 - <https://pseudoerasmus.com/>
+- <http://egtheory.wordpress.com/2013/06/30/how-ethnocentrics-rule/>
 - <https://www.palladiummag.com/2021/03/24/the-end-of-industrial-society/>
 - <https://astralcodexten.substack.com/p/book-review-how-asia-works>
 - <https://www.overcomingbias.com/2019/09/dreamtime-games.html>

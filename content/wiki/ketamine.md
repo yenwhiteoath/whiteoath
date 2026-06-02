@@ -6,7 +6,7 @@ toc: true
 draft: false
 ---
 
-The main use of ketamine for me is its ability to enhance appreciation and especially immersion for all kinds of media. It's mildly psychedelic too and I find it to increase creative thinking and a lowering of pre-conceived notions and static thought patterns. The mix of calmness and immersion seems to help with ADHD symptoms too although there are better substances for that. The medium-term anti-anhedonic effect that follows its use is a nice bonus.
+Ketamine's main use for is its ability to enhance appreciation and especially immersion for all kinds of media. It's mildly psychedelic too and I find it to increase creative thinking and a lowering of pre-conceived notions and static thought patterns. The mix of calmness and immersion seems to help with ADHD symptoms too although there are better substances for that. The medium-term anti-depressive effect that follows its use is a nice bonus also counters the occasional low grade anhedonia.
 
 I find its use outside/in clubs to be overrated, only small bumps should be used which are almost the same in effect with alcohol but with better disinhibition and relaxation. Anything more will mostly just create problems without much benefits. Ketamine is better used home alone. Its most obvious characteristic will be music appreciation and the user will stay busy with this activity for the first uses. After some time when music stops being that interesting, the other positive effects of ketamine will become more apparent as one starts acclimating to the substance and it will take a more calm and introspective and less hedonistic role, but will still remain an overall experience enhancer.
 
@@ -14,7 +14,7 @@ Although simple in theory, I've seen many chronic users claim that they still ha
 
 In any case people should dive in without expectations, start small and decide on the spot if they should continue. Take small bumps every 20 mins or so depending on mood, let yourself snowball if you feel like it. Doing big doses immediately almost always leads to confusion and no good effects. Also not everyone likes to k-hole, it's overrated and even if you want to do it again start small.
 
-2-FDCK is ketamine's almost indistinguishable cousin that's still legal and easy to find in high quality. It might be slightly less hedonistic and more introspective and longer-lasting, has good oral bioavailability, and is very hard to k-hole to.
+2-FDCK is ketamine's almost indistinguishable cousin that's still legal and easy to find in high quality. It might be slightly less hedonistic and more introspective and longer-lasting, has good oral bioavailability, and is harder to k-hole on.
 
 [Brief Primers on the Neuroscience of Psychedelics 4: The NMDA Antagonists](https://alieninsect.substack.com/p/brief-primers-on-the-neuroscience-0dc)
 

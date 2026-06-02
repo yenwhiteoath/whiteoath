@@ -15,13 +15,13 @@ menu:
       weight: 3
     - name: "Archive"
       url: /archive
-      weight: 3
+      weight: 4
     - name: "<u>T</u>ags"
       url: "/tags"
-      weight: 4
+      weight: 5
     - name: "About"
       url: "/about"
-      weight: 5
+      weight: 6
 
 params:
   description: "White Oath Exocore"

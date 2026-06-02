@@ -33,7 +33,7 @@ Nah that's high dose, when you start to hallucinate it's high serotonin, works d
 
 The pineal gland is the death gland, like cortisol, estrogen, adrenaline is produced under stress, the last in line is DMT and other downstream derivatives of tryptophan, serotonin ect.
 
->Stress hormones, serotonin, turn people criminal. Compulsive violent urges are not "masculine" at all, they're a sign that there's something going wrong inside you. Finding wife-beating hot (e.g. that "you hit like a bitch" tweet) is the same - your body's fucked up
+Stress hormones, serotonin, turn people criminal. Compulsive violent urges are not "masculine" at all, they're a sign that there's something going wrong inside you. Finding wife-beating hot (e.g. that "you hit like a bitch" tweet) is the same - your body's fucked up
 
 High androgens either endogenous or exogenous often go together with increased estrogen, mainly because of aromatization. This is roid rage in all it's simplicity
 
