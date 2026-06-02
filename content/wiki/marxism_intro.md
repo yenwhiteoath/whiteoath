@@ -1,8 +1,8 @@
 ---
 title: Marxism reading list
 date: 2026-06-03
-tags: ['politics', 'philosophy']
-toc: true
+tags: ['philosophy']
+toc: false
 draft: false
 ---
 
