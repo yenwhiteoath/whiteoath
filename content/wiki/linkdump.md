@@ -51,6 +51,7 @@ draft: false
 - <https://spandrell.com/>
 - <https://samoburja.com/essays/>
 - <https://chuangcn.org/>
+- <https://chinaopensourceobservatory.org/publications/a-study-of-the-industrial-party-and-the-sentimental-party/a-study-of-the-industrial-party-and-the-sentimental-party>
 - <https://andrewbatson.com/>
 - <https://pseudoerasmus.com/>
 - <http://egtheory.wordpress.com/2013/06/30/how-ethnocentrics-rule/>
@@ -70,6 +71,5 @@ draft: false
 - <https://www.dailymail.co.uk/news/article-9783807/Navy-disarray-focusing-diversity-training-warfighting-report-says.html>
 - <https://www.chicagotribune.com/opinion/commentary/ct-gloria-steinem-cia-20151025-story.html>
 - <https://threadreaderapp.com/thread/1360204951327186947.html>
-
 
 
