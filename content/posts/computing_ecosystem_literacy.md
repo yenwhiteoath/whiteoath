@@ -121,9 +121,9 @@ You will commonly use `git status` to see the repository's current status and it
 
 The workflow for making changes to a repository that multiple people or agents are actively working on involves using Git branches. Pull the latest changes, then:
 
-1. Run `git checkout -b "<new branch name>"` to create a new branch and check it out.
+1. Run `git checkout -b "<new branch name>"` to create a new branch and checkout on it.
 2. Add commits to this branch in the usual way with `git add` and `git commit`, and optionally use `git push`.
-3. Merge these commits back into the main tree by checking it out with `git checkout main`, pulling the latest changes, and then running `git merge "<branch name>"`.
+3. Merge these commits back into the main tree by going back to it with `git checkout main`, pulling the latest changes, and then running `git merge "<branch name>"`.
 
 The working tree might have diverged since you created your branch, but that won't necessarily be a problem. If it has diverged *and* the same parts of the same files were changed both in the working tree and in your branch, Git will guide you through resolving the merge conflicts.
 
@@ -158,6 +158,6 @@ My `herdr` setup:
 2. Use a few tabs in every workspace:
    - A CLI agent tab
    - A "main" tab for reviewing diffs (with [`hunk`](https://www.hunk.dev/)), running Git commands, and performing general file operations
-   - Additional tabs (possibly with split panels) for running, building, and testing each front end, back end, worker, and so on
+   - Additional tabs (possibly with split panels) for running, building, and testing each front end, back end, background workers, and so on
 
 Bonus: since we work entirely from the command line and don't often type code by hand, the Herdr developers had the smart idea of making their terminal UI mobile-friendly. This means we can connect to our computer using Tailscale and `ssh` and work from a mobile phone without much inconvenience. When you connect from your phone using `ssh` and run `herdr`, it instantly brings up all your open projects and tabs. You can detach at any time, leave them running as they are, and reconnect later.
