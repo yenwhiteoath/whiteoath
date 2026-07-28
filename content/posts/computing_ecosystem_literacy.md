@@ -1,6 +1,6 @@
 ---
 title: Computing Ecosystem Literacy
-date: 2026-28-07
+date: 2026-07-28
 tags: ['computing']
 draft: false
 ---
